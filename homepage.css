@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url(bg.jpg);
 }
 
 /* Persistent Header */
@@ -10,7 +11,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #fff;
+  background: #333;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: flex;
@@ -33,12 +34,11 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: bold;
 }
 
 nav ul li a.cta-button {
-  background: #007bff;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -56,10 +56,11 @@ nav ul li a.cta-button {
   justify-content: space-between;
   align-items: center;
   padding: 50px 0;
+  margin-left: 364px;
 }
 
 .hero-content {
-  max-width: 50%;
+  max-width: 76%;
 }
 
 .hero-content h1 {
@@ -115,6 +116,7 @@ nav ul li a.cta-button {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-color: #1d77d7;
 }
 
 .feature-item i {
@@ -136,4 +138,10 @@ footer nav ul {
 
 footer nav ul li a {
   color: #fff;
+}
+p {
+  text-align: center;
+}
+.hover:hover {
+  background-color: #007bff;
 }
