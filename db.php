@@ -5,11 +5,12 @@ $password = '';
 $database = 'event_management';
 
 // Create connection
-$conn = mysqli_connect($host, $username, $password,$database);
+$conn = mysqli_connect($host, $username, $password);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
+mysqli_select_db($database);
 $sql="create DATABASE if not exists event_management;";
 if(!mysqli_query($conn,$sql))
 {
