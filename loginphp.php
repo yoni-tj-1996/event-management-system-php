@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      <?php require 'header.php';  ?>
+
       <?php
 require 'db.php';
 session_start();
@@ -29,11 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             // Redirect based on role
             if ($user['role'] == 'manager') {
-                echo '<script>window.location.href = "managerEvent.php";</script>';
+                echo '<script>window.location.href = "manager_dashboard.php";</script>';
 
             } else {
                 
-                echo '<script>window.location.href = "dashboard.php";</script>';
+                echo '<script>window.location.href = "user_dashboard.php";</script>';
             }
             exit(); 
         } else {
@@ -59,6 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <p class="error"><?php echo $_GET['error']; ?></p>
         <?php endif; ?>
     </div>
-    <?php require 'footer.php';?>   
+
 </body>
 </html>
