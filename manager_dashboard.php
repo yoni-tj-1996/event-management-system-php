@@ -20,6 +20,7 @@ require 'manager_dashboard_logic.php';
                 <li><a href="#event-management" class="nav-link active">Event Management</a></li>
                 <li><a href="#attendee-list" class="nav-link">Attendee List</a></li>
                 <li><a href="#reminders" class="nav-link">Send Reminders</a></li>
+                <li><a href="loginphp.php">logout</a></li>
         
             </ul>
         </div>
