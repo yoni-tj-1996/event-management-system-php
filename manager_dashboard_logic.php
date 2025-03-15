@@ -4,7 +4,9 @@ session_start();
 
 // Check if the user is logged in and is a manager
 if (!isset($_SESSION['user_id'])) {
-    echo '<script>window.location.href = "loginphp.php";</script>';
+ 
+        die("error=User not logged in.");
+
     exit();
 }
 
