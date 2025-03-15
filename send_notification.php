@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     mysqli_close($conn); // Close connection
 
     // Redirect after successful notification
-    header("Location: interface_events.php");
+    header("Location: manager_dashboard.php");
     exit();
 } else {
     exit("Invalid request.");
