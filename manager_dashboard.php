@@ -121,7 +121,7 @@ require 'manager_dashboard_logic.php';
         </div>
     </div>
 
-    <script scr="j.js">
+    <script src="j.js">
 
     </script>
 
