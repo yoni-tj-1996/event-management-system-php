@@ -36,6 +36,6 @@
         <p>Already have an account? <a href="loginphp.php">Login</a></p>
     </div>
     <script scr="scripts.js"></script>
-    <?php require 'footer.php';?> 
+  git commit -m "modifiy"
 </body>
 </html>
