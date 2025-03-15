@@ -10,12 +10,14 @@ $conn = mysqli_connect($host, $username, $password);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-mysqli_select_db($conn,$database);
+
 $sql="create DATABASE if not exists event_management;";
+
 if(!mysqli_query($conn,$sql))
 {
     die("database creation failed: " . mysqli_connect_error());
 }
+mysqli_select_db($conn,$database);
 $sql="create TABLE if not exists users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
