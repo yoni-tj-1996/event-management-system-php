@@ -39,6 +39,7 @@ $sql="create TABLE if not exists events (
     start_date DATETIME,
     end_date DATETIME,
     manager_id INT,
+     event_organizer varchar(20),
     FOREIGN KEY (manager_id) REFERENCES users(id)
 );";
 

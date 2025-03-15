@@ -1,38 +1,15 @@
 <?php
 session_start();
 require 'db.php';
-/*
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $event_id = $_SESSION['event_id']
-    $message = $_POST['message'];
 
-    $query = "select users.email FROM registrations 
-              JOIN users ON registrations.user_id = users.id 
-              WHERE registrations.event_id = '$event_id'";
-    $result = mysqli_query($conn, $query);
 
-    while ($row = mysqli_fetch_assoc($result)) {
-        $to = $row['email'];
-        $subject = "Event Notification";
-        $headers = "From: no-reply@eventmanagement.com";
-
-        // Send email
-        mail($to, $subject, $message, $headers);
-    }
-
-    header("interface_events.php");
-}*/
-?>
-<?php
 
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (!isset($_SESSION['event_id'])) {
-        die("Event ID is not set.");
-    }
 
-    $event_id = $_SESSION['event_id'];
+
+    $event_id = $_POST['reminder-event'];
     $message =$_POST['message'];
 
     
